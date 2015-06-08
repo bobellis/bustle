@@ -1,11 +1,17 @@
 <div class="container">
   <nav class='navbar navbar-default' role='navigation'>
     <ul class='nav navbar-nav'>
-      <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
-      <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-    </ul>
+      <li>{{#link-to 'news'}}News{{/link-to}}</li>
+      <li>{{#link-to 'news'}}Entertainment{{/link-to}}</li>
+      <li>{{#link-to 'news'}}Fashion & Beauty{{/link-to}}</li>
+      <li>{{#link-to 'news'}}Lifestyle{{/link-to}}</li>
+      <li>{{#link-to 'news'}}Books{{/link-to}}</li>
+      <li>{{#link-to 'news'}}Explore{{/link-to}}</li>
+      </ul>
+
+      {{view "select" content=names}}
+
   </nav>
-  
+
   {{outlet}}
 </div>
